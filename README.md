@@ -1,4 +1,42 @@
-DataStructures
-==============
+* SortingAndSearching: 
 
-Project for CEID course "Data Structures" of the 4th semester.  SortingAlgorithms - contains implementation of few sorting and searching algorithms. It also contains useful methods for parsing data from files and writing to them, as well as methods that time the execution of the implemented algorithms.  2-3-4 ab Tree - An 2-3-4 tree is implemented along with all the basic funtions such as insert, remove, contains, etc. Additionally there has been use of the graphvis api to produce a .png icon for the tree state.
+To compile and run the program:
+
+```
+cd SortingAndSearching
+make
+./sortNsearch
+```
+
+* 2-3-4 ab Tree:
+
+Additional packages: graphvis
+
+```
+sudo apt-get install graphvis-dev
+```
+
+For Ubuntu 14.04:
+
+```
+cd 234Tree
+make
+./tree
+```
+
+For Ubuntu >=12.04:
+
+> You need to alter the makefile and GraphVis.h
+
+> * In the makefile: replace the **-lcgraph** with **-lgraph**
+> * In GraphVis.h: comment the line " **#define WITH_CGRAPH** " to use the graph.h instead of the cgraph.h
+
+Then:
+
+```
+cd 234Tree
+make
+./tree
+```
+
+* Use ```make clean``` to clear out any output files
