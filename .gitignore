@@ -2,3 +2,6 @@
 *.out
 *.png
 sortedOut.txt
+Doxyfile
+build
+bin
