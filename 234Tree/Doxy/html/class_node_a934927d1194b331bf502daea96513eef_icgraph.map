@@ -1,0 +1,4 @@
+<map id="Node::insertChild" name="Node::insertChild">
+<area shape="rect" id="node2" href="$class_tree.html#a0b32b0ca65d8ef7df1dc3a1bd0cf6a99" title="Inserts the requested value to the tree as a leaf while keeping it balanced. " alt="" coords="176,5,264,32"/>
+<area shape="rect" id="node3" href="$class_tree.html#a0015486626ad4da2a7dba4f60ed9aa79" title="Removes the requested leaf while keeping the tree balanced. " alt="" coords="312,5,411,32"/>
+</map>

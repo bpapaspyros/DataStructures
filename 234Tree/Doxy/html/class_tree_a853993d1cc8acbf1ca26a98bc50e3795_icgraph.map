@@ -1,0 +1,5 @@
+<map id="Tree::empty" name="Tree::empty">
+<area shape="rect" id="node2" href="$class_tree.html#abb768469ad246c52c8b5ba6ad9c02f70" title="Simply checks if the given value is contained in the tree as a leaf. " alt="" coords="147,31,253,57"/>
+<area shape="rect" id="node3" href="$class_tree.html#a0b32b0ca65d8ef7df1dc3a1bd0cf6a99" title="Inserts the requested value to the tree as a leaf while keeping it balanced. " alt="" coords="301,5,389,32"/>
+<area shape="rect" id="node4" href="$class_tree.html#a0015486626ad4da2a7dba4f60ed9aa79" title="Removes the requested leaf while keeping the tree balanced. " alt="" coords="437,31,536,57"/>
+</map>

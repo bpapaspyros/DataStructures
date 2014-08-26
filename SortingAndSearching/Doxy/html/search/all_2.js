@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['cmakeccompilerid_2ec',['CMakeCCompilerId.c',['../_c_make_c_compiler_id_8c.html',1,'']]],
-  ['cmakecxxcompilerid_2ecpp',['CMakeCXXCompilerId.cpp',['../_c_make_c_x_x_compiler_id_8cpp.html',1,'']]],
-  ['compiler_5fid',['COMPILER_ID',['../_c_make_c_compiler_id_8c.html#a81dee0709ded976b2e0319239f72d174',1,'COMPILER_ID():&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#a81dee0709ded976b2e0319239f72d174',1,'COMPILER_ID():&#160;CMakeCXXCompilerId.cpp']]]
+  ['main_20page',['Main page',['../index.html',1,'']]],
+  ['main',['main',['../main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main.cpp']]],
+  ['main_2ecpp',['main.cpp',['../main_8cpp.html',1,'']]],
+  ['merge',['merge',['../class_sort___n___search.html#a92480efea81ee755f6353d9a2e96ee03',1,'Sort_N_Search']]],
+  ['mergesort',['mergesort',['../class_sort___n___search.html#ad34f3e05b8ed39ea004e7253b7d7c068',1,'Sort_N_Search']]]
 ];

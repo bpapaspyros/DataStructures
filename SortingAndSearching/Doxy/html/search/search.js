@@ -7,13 +7,11 @@
 
 var indexSectionsWithContent =
 {
-  0: "abcdghimpqs",
+  0: "bgmpqs",
   1: "s",
-  2: "cms",
+  2: "ms",
   3: "bgmpqs",
-  4: "i",
-  5: "acdhp",
-  6: "m"
+  4: "m"
 };
 
 var indexSectionNames =
@@ -22,9 +20,7 @@ var indexSectionNames =
   1: "classes",
   2: "files",
   3: "functions",
-  4: "variables",
-  5: "defines",
-  6: "pages"
+  4: "pages"
 };
 
 function convertToId(search)

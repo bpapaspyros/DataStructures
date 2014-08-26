@@ -1,0 +1,5 @@
+<map id="Node::recursiveNumOfLeaves" name="Node::recursiveNumOfLeaves">
+<area shape="rect" id="node2" href="$class_node.html#ae0c0332615644c989be5c8137b4109a5" title="Creates an array of integers with the info located in the leaves. The array should be sorted if the t..." alt="" coords="253,5,413,32"/>
+<area shape="rect" id="node4" href="$class_tree.html#a54ddf4e99c00553a6b07cb9b149988e2" title="Counting the number of leaves that the tree holds with a recursive function. " alt="" coords="256,56,411,83"/>
+<area shape="rect" id="node3" href="$class_tree.html#a730a56b16e855a1b08a24ee11840d508" title="An array containing all the info from the leaves. " alt="" coords="462,5,575,32"/>
+</map>

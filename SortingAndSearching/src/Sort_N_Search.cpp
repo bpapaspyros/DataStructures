@@ -15,12 +15,12 @@ Sort_N_Search::Sort_N_Search() {
 /*- -------------------------------------------------------------- -*/
 
 /**
-  * \brief MERGESORT implementation. 
-  * The basic idea behind the mergesort algorithm is that 
-  * we split the initial array that we are given in to two equal arrays recursively 
-  * until we come to have two numbers and then we sort those and merge them into a  
-  * single array (the original one that we were given)                              
-*/
+ * @brief MERGESORT implementation. 
+ * The basic idea behind the mergesort algorithm is that 
+ * we split the initial array that we are given in to two equal arrays recursively 
+ * until we come to have two numbers and then we sort those and merge them into a  
+ * single array (the original one that we were given)                              
+ */
 // recursive call of this method to achieve the mergesort algorithm
 void Sort_N_Search::mergesort(int* inArray, int lower_lim, int upper_lim) {
 	if (lower_lim < upper_lim){
@@ -67,13 +67,13 @@ void Sort_N_Search::merge(int* inArray, int lower_lim, int upper_lim)
 /*- -------------------------------------------------------------- -*/
 
 /** 
-  * \brief QUICKSORT implementation. 
-  *
-  * The basic idea behind the quicksort algorithm is that 
-  * we use the divide and conquer method. We initially split the array to two 	   
-  * arrays and then we apply the same method to the sub arrays recursively until    
-  * the we get all elements sorted.                                                 
-*/
+ * @brief QUICKSORT implementation. 
+ *
+ * The basic idea behind the quicksort algorithm is that 
+ * we use the divide and conquer method. We initially split the array to two 	   
+ * arrays and then we apply the same method to the sub arrays recursively until    
+ * the we get all elements sorted.                                                 
+ */
 
 void Sort_N_Search::quicksort(int* inArray, int lower_lim, int upper_lim) {
 	// left and right limits
@@ -111,12 +111,12 @@ void Sort_N_Search::quicksort(int* inArray, int lower_lim, int upper_lim) {
 /*- -------------------------------------------------------------- -*/
 
 /**
-  * \brief BUBLESORT implementation. 
-  *
-  * The basic idea behind the bublesort algorithm is 
-  * that we scan the whole array until we find the min value and then we use   
-  * the same method with the next min value until all elements are sorted      
-*/
+ * @brief BUBLESORT implementation. 
+ *
+ * The basic idea behind the bublesort algorithm is 
+ * that we scan the whole array until we find the min value and then we use   
+ * the same method with the next min value until all elements are sorted      
+ */
 
 void Sort_N_Search::bublesort(int* inArray, int size) {
 	while (size>1) {
@@ -144,13 +144,13 @@ void Sort_N_Search::bublesort(int* inArray, int size) {
 /*- -------------------------------------------------------------- -*/
 
 /** 
-  * \brief BINARY implementation. 
-  *
-  * The basic idea behind the binary search algorithm is   
-  * that we check the middle value of the array and if it is smaller than the key 
-  * given then we search recursively the right half of the array otherwise we     
-  * search the right part, unless the key give is located in the middle		     
-*/
+ * @brief BINARY implementation. 
+ *
+ * The basic idea behind the binary search algorithm is   
+ * that we check the middle value of the array and if it is smaller than the key 
+ * given then we search recursively the right half of the array otherwise we     
+ * search the right part, unless the key give is located in the middle		     
+ */
 
 int Sort_N_Search::binarySearch(int* inArray, int lower_limit, int upper_limit, int key) {
 	int index = -1;	// index of the requested element (or -1 if it doesn't exist)
@@ -174,14 +174,14 @@ int Sort_N_Search::binarySearch(int* inArray, int lower_limit, int upper_limit, 
 
 /*- -------------------------------------------------------------- -*/
 
-/** \brief BINARY INTERPOLATION implementation. 
-  * 
-  * The basic idea behind the binary interpolation search algorithm 
-  * is that we combine the benefits of applying a binary and an interpolation 
-  * search so that we narrow down the search key in less loops. There has 
-  * been added a code snippet to check if the initial next variable 
-  * is out of bounds for our array 	 
-*/															   
+/** @brief BINARY INTERPOLATION implementation. 
+ * 
+ * The basic idea behind the binary interpolation search algorithm 
+ * is that we combine the benefits of applying a binary and an interpolation 
+ * search so that we narrow down the search key in less loops. There has 
+ * been added a code snippet to check if the initial next variable 
+ * is out of bounds for our array 	 
+ */															   
 int Sort_N_Search::binaryInterpolationSearch(int* inArray, int size, int key) {
 	int left = 0;
 	int right = size-1;
@@ -244,8 +244,8 @@ int Sort_N_Search::binaryInterpolationSearch(int* inArray, int size, int key) {
 /*- -------------------------------------------------------------- -*/
 // simple swap method
 /**
-  * \brief Swapping two numbers
-*/
+ * @brief Swapping two numbers
+ */
 void Sort_N_Search::swap(int& a, int& b) {
 	int temp = b;
 	b = a;
@@ -255,8 +255,8 @@ void Sort_N_Search::swap(int& a, int& b) {
 /*- -------------------------------------------------------------- -*/
 // populating an array of integers with random numbers
 /**
-  * \brief Initializing the given array with values from 0-up_lim
-*/
+ * @brief Initializing the given array with values from 0-up_lim
+ */
 void Sort_N_Search::initArray(int *inArray, int size, int up_lim) {
 	for (int i=0; i<size; i++) {
 		inArray[i] = rand()%up_lim;
@@ -264,16 +264,16 @@ void Sort_N_Search::initArray(int *inArray, int size, int up_lim) {
 }
 
 /**
-  * \brief Uses the previous method with the up_lim defaulting to 100
-*/
+ * @brief Uses the previous method with the up_lim defaulting to 100
+ */
 void Sort_N_Search::initArray(int *inArray, int size) {
 	initArray(inArray, size, 100); // defaults to the range 0-99
 }
 
 /*- -------------------------------------------------------------- -*/
 /**
-  * \brief Initializes the array given with the data of file
-*/
+ * @brief Initializes the array given with the data of file
+ */
 void Sort_N_Search::initArrayFromFile(int* inArray, const char* filename) {
 	std::ifstream  dataFile(filename);	// file stream
 
@@ -295,8 +295,8 @@ void Sort_N_Search::initArrayFromFile(int* inArray, const char* filename) {
 
 /*- -------------------------------------------------------------- -*/
 /**
-  * \brief Counts the number of elements in the file given
-*/
+ * @brief Counts the number of elements in the file given
+ */
 int Sort_N_Search::getFileElements(const char* filename) {
 	int elNum = 0;	// number of elements we counted in the file
 
@@ -313,8 +313,8 @@ int Sort_N_Search::getFileElements(const char* filename) {
 
 /*- -------------------------------------------------------------- -*/
 /**
-  * \brief After the array has been sorted this method writes the data to a file
-*/
+ * @brief After the array has been sorted this method writes the data to a file
+ */
 void Sort_N_Search::writeSortedToFile(int* inArray, int size) {
 	std::string str = "sortedOut.txt";		// output file name
 	std::ofstream  dataFile(str.c_str());	// file stream
@@ -330,8 +330,8 @@ void Sort_N_Search::writeSortedToFile(int* inArray, int size) {
 
 /*- -------------------------------------------------------------- -*/
 /**
-  * \brief Gets a filename from the user
-*/
+ * @brief Gets a filename from the user
+ */
 std::string Sort_N_Search::getFilename() {
 	std::string str;
 
@@ -343,8 +343,8 @@ std::string Sort_N_Search::getFilename() {
 
 /*- -------------------------------------------------------------- -*/
 /**
-  * \brief Gets a search key from the user
-*/
+ * @brief Gets a search key from the user
+ */
 int Sort_N_Search::getSearchKey() {
 	int key;
 
@@ -356,24 +356,24 @@ int Sort_N_Search::getSearchKey() {
 
 /*- -------------------------------------------------------------- -*/
 /**
-  * \brief Starts the timer that will count the execution time
-*/
+ * @brief Starts the timer that will count the execution time
+ */
 void Sort_N_Search::start_timer() {
 	t_start = clock();
 }
 
 /*- -------------------------------------------------------------- -*/
 /**
-  * \brief Stops the above timer and calculates the time spent
-*/
+ * @brief Stops the above timer and calculates the time spent
+ */
 void Sort_N_Search::stop_timer() {
 	dtime =  (double)(clock() - t_start)/CLOCKS_PER_SEC;
 }
 
 /*- -------------------------------------------------------------- -*/
 /**
-  * \brief Returns the execution time 
-*/
+ * @brief Returns the execution time 
+ */
 double Sort_N_Search::getExecutionTime() {
 	return dtime;
 }
@@ -386,8 +386,8 @@ double Sort_N_Search::getExecutionTime() {
 					 **********************************/
 /*- -------------------------------------------------------------- -*/
 /**
-  * \brief Prints the array give to the console
-*/
+ * @brief Prints the array give to the console
+ */
 void Sort_N_Search::printArray(int* inArray, int size) {
 	// printing a given array so that it is readable
 	std::cout << "\n\t*********************************************** \n" << std::endl;
@@ -402,8 +402,8 @@ void Sort_N_Search::printArray(int* inArray, int size) {
 
 /*- -------------------------------------------------------------- -*/
 /**
-  * \brief Prints an appropriate message for the requested key
-*/
+ * @brief Prints an appropriate message for the requested key
+ */
 void Sort_N_Search::printKey(int pos) {
 	if (pos != -1) {
 		std::cout << "The requested element's index is: " << pos << std::endl;
@@ -415,9 +415,9 @@ void Sort_N_Search::printKey(int pos) {
 
 /*- -------------------------------------------------------------- -*/
 /**
-  * \brief A CLI built so that the user can choose between sorting and searching
-  * algorithms, as well as input filenames and search keys.
-*/
+ * @brief A CLI built so that the user can choose between sorting and searching
+ * algorithms, as well as input filenames and search keys.
+ */
 void Sort_N_Search::printMenu(int elNum) {
 	if (elNum<2) {
 		elNum = 32;			// element number defaulting to 32

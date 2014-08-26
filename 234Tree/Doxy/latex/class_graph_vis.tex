@@ -1,0 +1,320 @@
+\hypertarget{class_graph_vis}{\section{Graph\-Vis Class Reference}
+\label{class_graph_vis}\index{Graph\-Vis@{Graph\-Vis}}
+}
+
+
+\hyperlink{class_graph_vis}{Graph\-Vis} Class.  
+
+
+
+
+{\ttfamily \#include $<$Graph\-Vis.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_graph_vis_a1497d459b62a4a82a8f965870b13ea6d}{Graph\-Vis} ()
+\begin{DoxyCompactList}\small\item\em Initializes the necessary values following the graphviz api. \end{DoxyCompactList}\item 
+\hyperlink{class_graph_vis_a961003c9f999090d89db19772311ba81}{$\sim$\-Graph\-Vis} ()
+\item 
+Agnode\-\_\-t $\ast$ \hyperlink{class_graph_vis_aaadf4feb214a03fa6f923a30b7fcbf7f}{add\-Node} (std\-::string name)
+\begin{DoxyCompactList}\small\item\em Adds a node. \end{DoxyCompactList}\item 
+void \hyperlink{class_graph_vis_aa6403b7de690930c61d2c2ce50268bb1}{add\-Edge} (Agnode\-\_\-t $\ast$n1, Agnode\-\_\-t $\ast$n2)
+\begin{DoxyCompactList}\small\item\em Adds an edge. \end{DoxyCompactList}\item 
+void \hyperlink{class_graph_vis_a5606406187d65d9fb827ffe6df14b84e}{write\-Graph\-To\-P\-N\-G} (std\-::string filename)
+\begin{DoxyCompactList}\small\item\em Transfers the tree to a png image. \end{DoxyCompactList}\item 
+void \hyperlink{class_graph_vis_acab8c60a8f8b1a8fecd7297d303a2601}{load\-Tree} (\hyperlink{class_tree}{Tree} $\ast$tree)
+\begin{DoxyCompactList}\small\item\em Used to load a tree's nodes and call the appropriate function to output the png. \end{DoxyCompactList}\item 
+void \hyperlink{class_graph_vis_a683b40ddb0fdd31e0c39af23b9826aca}{add\-Children} (\hyperlink{class_node}{Node} $\ast$father, Agnode\-\_\-t $\ast$gnode, int num\-Children)
+\begin{DoxyCompactList}\small\item\em Add nodes and edges to connect a parent node to its children. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static char $\ast$ \hyperlink{class_graph_vis_adcaebafcfc7696abfa49e894211e7077}{string\-To\-Char} (std\-::string input)
+\begin{DoxyCompactList}\small\item\em Converts a string variable to a char$\ast$ for graphviz compatibility reasons. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_graph_vis}{Graph\-Vis} Class. 
+
+This class uses the graphviz package to create a .png image of the current tree. It includes methods used to load the appropriate data to the graphviz package.
+
+\begin{DoxyAuthor}{Author}
+Vaios Papaspyros
+\end{DoxyAuthor}
+Contact\-: \href{mailto:b.papaspyros@gmail.com}{\tt b.\-papaspyros@gmail.\-com} or create an issue on the github page \href{https://github.com/bpapaspyros/DataStructures}{\tt https\-://github.\-com/bpapaspyros/\-Data\-Structures} 
+
+Definition at line 31 of file Graph\-Vis.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_graph_vis_a1497d459b62a4a82a8f965870b13ea6d}{\index{Graph\-Vis@{Graph\-Vis}!Graph\-Vis@{Graph\-Vis}}
+\index{Graph\-Vis@{Graph\-Vis}!GraphVis@{Graph\-Vis}}
+\subsubsection[{Graph\-Vis}]{\setlength{\rightskip}{0pt plus 5cm}Graph\-Vis\-::\-Graph\-Vis (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_graph_vis_a1497d459b62a4a82a8f965870b13ea6d}
+
+
+Initializes the necessary values following the graphviz api. 
+
+
+
+Definition at line 5 of file Graph\-Vis.\-cpp.
+
+\hypertarget{class_graph_vis_a961003c9f999090d89db19772311ba81}{\index{Graph\-Vis@{Graph\-Vis}!$\sim$\-Graph\-Vis@{$\sim$\-Graph\-Vis}}
+\index{$\sim$\-Graph\-Vis@{$\sim$\-Graph\-Vis}!GraphVis@{Graph\-Vis}}
+\subsubsection[{$\sim$\-Graph\-Vis}]{\setlength{\rightskip}{0pt plus 5cm}Graph\-Vis\-::$\sim$\-Graph\-Vis (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_graph_vis_a961003c9f999090d89db19772311ba81}
+
+
+Definition at line 22 of file Graph\-Vis.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_graph_vis_a683b40ddb0fdd31e0c39af23b9826aca}{\index{Graph\-Vis@{Graph\-Vis}!add\-Children@{add\-Children}}
+\index{add\-Children@{add\-Children}!GraphVis@{Graph\-Vis}}
+\subsubsection[{add\-Children}]{\setlength{\rightskip}{0pt plus 5cm}void Graph\-Vis\-::add\-Children (
+\begin{DoxyParamCaption}
+\item[{{\bf Node} $\ast$}]{father, }
+\item[{Agnode\-\_\-t $\ast$}]{gnode, }
+\item[{int}]{num\-Children}
+\end{DoxyParamCaption}
+)}}\label{class_graph_vis_a683b40ddb0fdd31e0c39af23b9826aca}
+
+
+Add nodes and edges to connect a parent node to its children. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointers} & to the parent (father) node, the child node and an integer representing the number of children \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 96 of file Graph\-Vis.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_graph_vis_a683b40ddb0fdd31e0c39af23b9826aca_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_graph_vis_a683b40ddb0fdd31e0c39af23b9826aca_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_graph_vis_aa6403b7de690930c61d2c2ce50268bb1}{\index{Graph\-Vis@{Graph\-Vis}!add\-Edge@{add\-Edge}}
+\index{add\-Edge@{add\-Edge}!GraphVis@{Graph\-Vis}}
+\subsubsection[{add\-Edge}]{\setlength{\rightskip}{0pt plus 5cm}void Graph\-Vis\-::add\-Edge (
+\begin{DoxyParamCaption}
+\item[{Agnode\-\_\-t $\ast$}]{n1, }
+\item[{Agnode\-\_\-t $\ast$}]{n2}
+\end{DoxyParamCaption}
+)}}\label{class_graph_vis_aa6403b7de690930c61d2c2ce50268bb1}
+
+
+Adds an edge. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 2} & Agnode\-\_\-t$\ast$ that will be connected with an edge \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 52 of file Graph\-Vis.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_graph_vis_aa6403b7de690930c61d2c2ce50268bb1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_graph_vis_aaadf4feb214a03fa6f923a30b7fcbf7f}{\index{Graph\-Vis@{Graph\-Vis}!add\-Node@{add\-Node}}
+\index{add\-Node@{add\-Node}!GraphVis@{Graph\-Vis}}
+\subsubsection[{add\-Node}]{\setlength{\rightskip}{0pt plus 5cm}Agnode\-\_\-t $\ast$ Graph\-Vis\-::add\-Node (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{name}
+\end{DoxyParamCaption}
+)}}\label{class_graph_vis_aaadf4feb214a03fa6f923a30b7fcbf7f}
+
+
+Adds a node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em String} & containing the node's name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Agnode\-\_\-t$\ast$ ready for use by graphviz 
+\end{DoxyReturn}
+
+
+Definition at line 34 of file Graph\-Vis.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{class_graph_vis_aaadf4feb214a03fa6f923a30b7fcbf7f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_graph_vis_aaadf4feb214a03fa6f923a30b7fcbf7f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_graph_vis_acab8c60a8f8b1a8fecd7297d303a2601}{\index{Graph\-Vis@{Graph\-Vis}!load\-Tree@{load\-Tree}}
+\index{load\-Tree@{load\-Tree}!GraphVis@{Graph\-Vis}}
+\subsubsection[{load\-Tree}]{\setlength{\rightskip}{0pt plus 5cm}void Graph\-Vis\-::load\-Tree (
+\begin{DoxyParamCaption}
+\item[{{\bf Tree} $\ast$}]{tree}
+\end{DoxyParamCaption}
+)}}\label{class_graph_vis_acab8c60a8f8b1a8fecd7297d303a2601}
+
+
+Used to load a tree's nodes and call the appropriate function to output the png. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & pointer to a \hyperlink{class_tree}{Tree} class instance \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 80 of file Graph\-Vis.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_graph_vis_acab8c60a8f8b1a8fecd7297d303a2601_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_graph_vis_acab8c60a8f8b1a8fecd7297d303a2601_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_graph_vis_adcaebafcfc7696abfa49e894211e7077}{\index{Graph\-Vis@{Graph\-Vis}!string\-To\-Char@{string\-To\-Char}}
+\index{string\-To\-Char@{string\-To\-Char}!GraphVis@{Graph\-Vis}}
+\subsubsection[{string\-To\-Char}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ Graph\-Vis\-::string\-To\-Char (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_graph_vis_adcaebafcfc7696abfa49e894211e7077}
+
+
+Converts a string variable to a char$\ast$ for graphviz compatibility reasons. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & string variable \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 135 of file Graph\-Vis.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_graph_vis_adcaebafcfc7696abfa49e894211e7077_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_graph_vis_a5606406187d65d9fb827ffe6df14b84e}{\index{Graph\-Vis@{Graph\-Vis}!write\-Graph\-To\-P\-N\-G@{write\-Graph\-To\-P\-N\-G}}
+\index{write\-Graph\-To\-P\-N\-G@{write\-Graph\-To\-P\-N\-G}!GraphVis@{Graph\-Vis}}
+\subsubsection[{write\-Graph\-To\-P\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}void Graph\-Vis\-::write\-Graph\-To\-P\-N\-G (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{filename}
+\end{DoxyParamCaption}
+)}}\label{class_graph_vis_a5606406187d65d9fb827ffe6df14b84e}
+
+
+Transfers the tree to a png image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Output} & image filename \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 62 of file Graph\-Vis.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_graph_vis_a5606406187d65d9fb827ffe6df14b84e_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/baios/\-Coding/\-C++/\-Git\-Data\-Structures/\-Data\-Structures/234\-Tree/include/\hyperlink{_graph_vis_8h}{Graph\-Vis.\-h}\item 
+/home/baios/\-Coding/\-C++/\-Git\-Data\-Structures/\-Data\-Structures/234\-Tree/src/\hyperlink{_graph_vis_8cpp}{Graph\-Vis.\-cpp}\end{DoxyCompactItemize}

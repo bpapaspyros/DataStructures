@@ -1,0 +1,4 @@
+<map id="Tree::toIntArray" name="Tree::toIntArray">
+<area shape="rect" id="node2" href="$class_node.html#ae0c0332615644c989be5c8137b4109a5" title="Creates an array of integers with the info located in the leaves. The array should be sorted if the t..." alt="" coords="168,5,328,32"/>
+<area shape="rect" id="node3" href="$class_node.html#a970755e7b9ff4a33fde5433663f06549" title="Counts the number of leaves recursively. " alt="" coords="377,5,575,32"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="GraphVis::stringToChar" name="GraphVis::stringToChar">
+<area shape="rect" id="node2" href="$class_graph_vis.html#aaadf4feb214a03fa6f923a30b7fcbf7f" title="Adds a node. " alt="" coords="213,5,349,32"/>
+<area shape="rect" id="node3" href="$class_graph_vis.html#acab8c60a8f8b1a8fecd7297d303a2601" title="Used to load a tree&#39;s nodes and call the appropriate function to output the png. " alt="" coords="601,5,735,32"/>
+<area shape="rect" id="node6" href="$class_graph_vis.html#a683b40ddb0fdd31e0c39af23b9826aca" title="Add nodes and edges to connect a parent node to its children. " alt="" coords="398,31,551,57"/>
+<area shape="rect" id="node4" href="$class_interface.html#a39dfccfcfc9027f148f1a0280ff34fe5" title="Prints a basic menu to the user with all the available function that can be invoked on the tree..." alt="" coords="784,5,923,32"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="971,5,1021,32"/>
+</map>

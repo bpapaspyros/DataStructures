@@ -1,0 +1,368 @@
+\hypertarget{class_node}{\section{Node Class Reference}
+\label{class_node}\index{Node@{Node}}
+}
+
+
+\hyperlink{class_node}{Node} Class.  
+
+
+
+
+{\ttfamily \#include $<$Node.\-h$>$}
+
+
+
+Collaboration diagram for Node\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{class_node__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_node_a9524dc2afb2e7343951a4244edfd7621}{Node} (int data, \hyperlink{class_node}{Node} $\ast$p)
+\begin{DoxyCompactList}\small\item\em The constructor adds the data given as parameter to the data vector and sets the current node's parent. \end{DoxyCompactList}\item 
+\hyperlink{class_node_aa0840c3cb5c7159be6d992adecd2097c}{$\sim$\-Node} ()
+\begin{DoxyCompactList}\small\item\em The destructor deletes all members of the children vector when the instance goes out of scope. \end{DoxyCompactList}\item 
+int \hyperlink{class_node_ac393c36db7ebed00ac390e97f9994a12}{get\-Children} ()
+\begin{DoxyCompactList}\small\item\em Returns the number of children for this node instance. \end{DoxyCompactList}\item 
+bool \hyperlink{class_node_a3a61dca67d5ad06cacb8c48eb6374973}{is\-Leaf} ()
+\begin{DoxyCompactList}\small\item\em Depending on whether the current node is a leaf or not it returns a boolean value. \end{DoxyCompactList}\item 
+void \hyperlink{class_node_a934927d1194b331bf502daea96513eef}{insert\-Child} (\hyperlink{class_node}{Node} $\ast$child)
+\begin{DoxyCompactList}\small\item\em Pushes a node to the children vector. \end{DoxyCompactList}\item 
+int \hyperlink{class_node_a7c98fb9df43ac39b5e74eda16434908b}{recursive\-Num\-Of\-Nodes} (\hyperlink{class_node}{Node} $\ast$n)
+\begin{DoxyCompactList}\small\item\em Counts the number of nodes recursively. \end{DoxyCompactList}\item 
+int \hyperlink{class_node_a970755e7b9ff4a33fde5433663f06549}{recursive\-Num\-Of\-Leaves} (\hyperlink{class_node}{Node} $\ast$n)
+\begin{DoxyCompactList}\small\item\em Counts the number of leaves recursively. \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{class_node_ae0c0332615644c989be5c8137b4109a5}{recursive\-Int\-Array} (\hyperlink{class_node}{Node} $\ast$n)
+\begin{DoxyCompactList}\small\item\em Creates an array of integers with the info located in the leaves. The array should be sorted if the tree is balanced correctly. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::vector$<$ \hyperlink{class_node}{Node} $\ast$ $>$ \hyperlink{class_node_a49baf1d613dc14f1e1e4aad883dde6fe}{children}
+\begin{DoxyCompactList}\small\item\em Pointers to children. \end{DoxyCompactList}\item 
+std\-::vector$<$ int $>$ \hyperlink{class_node_aebcdeef2d940bb25316fd0eac5d51ed2}{\-\_\-data}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_node}{Node} data. \end{DoxyCompactList}\item 
+\hyperlink{class_node}{Node} $\ast$ \hyperlink{class_node_ad8184598cdea70e4bbdfd76f2b0f9e85}{parent}
+\begin{DoxyCompactList}\small\item\em Pointer to parent. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_node}{Node} Class. 
+
+This class has methods tha let you manage the node (children, data) and give you significant functions to calculate tree values and others that let you iterate through the tree
+
+\begin{DoxyAuthor}{Author}
+Vaios Papaspyros
+\end{DoxyAuthor}
+Contact\-: \href{mailto:b.papaspyros@gmail.com}{\tt b.\-papaspyros@gmail.\-com} or create an issue on the github page \href{https://github.com/bpapaspyros/DataStructures}{\tt https\-://github.\-com/bpapaspyros/\-Data\-Structures} 
+
+Definition at line 21 of file Node.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_node_a9524dc2afb2e7343951a4244edfd7621}{\index{Node@{Node}!Node@{Node}}
+\index{Node@{Node}!Node@{Node}}
+\subsubsection[{Node}]{\setlength{\rightskip}{0pt plus 5cm}Node\-::\-Node (
+\begin{DoxyParamCaption}
+\item[{int}]{data, }
+\item[{{\bf Node} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}}\label{class_node_a9524dc2afb2e7343951a4244edfd7621}
+
+
+The constructor adds the data given as parameter to the data vector and sets the current node's parent. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Takes} & an integer data which stands for the node key and a pointer to a \hyperlink{class_node}{Node} class instance \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 10 of file Node.\-cpp.
+
+\hypertarget{class_node_aa0840c3cb5c7159be6d992adecd2097c}{\index{Node@{Node}!$\sim$\-Node@{$\sim$\-Node}}
+\index{$\sim$\-Node@{$\sim$\-Node}!Node@{Node}}
+\subsubsection[{$\sim$\-Node}]{\setlength{\rightskip}{0pt plus 5cm}Node\-::$\sim$\-Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_node_aa0840c3cb5c7159be6d992adecd2097c}
+
+
+The destructor deletes all members of the children vector when the instance goes out of scope. 
+
+
+
+Definition at line 24 of file Node.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{class_node_aa0840c3cb5c7159be6d992adecd2097c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_node_ac393c36db7ebed00ac390e97f9994a12}{\index{Node@{Node}!get\-Children@{get\-Children}}
+\index{get\-Children@{get\-Children}!Node@{Node}}
+\subsubsection[{get\-Children}]{\setlength{\rightskip}{0pt plus 5cm}int Node\-::get\-Children (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_node_ac393c36db7ebed00ac390e97f9994a12}
+
+
+Returns the number of children for this node instance. 
+
+\begin{DoxyReturn}{Returns}
+the number of children for this node instance 
+\end{DoxyReturn}
+
+
+Definition at line 113 of file Node.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_node_ac393c36db7ebed00ac390e97f9994a12_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_node_a934927d1194b331bf502daea96513eef}{\index{Node@{Node}!insert\-Child@{insert\-Child}}
+\index{insert\-Child@{insert\-Child}!Node@{Node}}
+\subsubsection[{insert\-Child}]{\setlength{\rightskip}{0pt plus 5cm}void Node\-::insert\-Child (
+\begin{DoxyParamCaption}
+\item[{{\bf Node} $\ast$}]{child}
+\end{DoxyParamCaption}
+)}}\label{class_node_a934927d1194b331bf502daea96513eef}
+
+
+Pushes a node to the children vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Takes} & a pointer to a node instance \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 136 of file Node.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_node_a934927d1194b331bf502daea96513eef_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_node_a3a61dca67d5ad06cacb8c48eb6374973}{\index{Node@{Node}!is\-Leaf@{is\-Leaf}}
+\index{is\-Leaf@{is\-Leaf}!Node@{Node}}
+\subsubsection[{is\-Leaf}]{\setlength{\rightskip}{0pt plus 5cm}bool Node\-::is\-Leaf (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_node_a3a61dca67d5ad06cacb8c48eb6374973}
+
+
+Depending on whether the current node is a leaf or not it returns a boolean value. 
+
+\begin{DoxyReturn}{Returns}
+Returns true if this node is in fact a leaf or false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 123 of file Node.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{class_node_a3a61dca67d5ad06cacb8c48eb6374973_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_node_ae0c0332615644c989be5c8137b4109a5}{\index{Node@{Node}!recursive\-Int\-Array@{recursive\-Int\-Array}}
+\index{recursive\-Int\-Array@{recursive\-Int\-Array}!Node@{Node}}
+\subsubsection[{recursive\-Int\-Array}]{\setlength{\rightskip}{0pt plus 5cm}int $\ast$ Node\-::recursive\-Int\-Array (
+\begin{DoxyParamCaption}
+\item[{{\bf Node} $\ast$}]{n}
+\end{DoxyParamCaption}
+)}}\label{class_node_ae0c0332615644c989be5c8137b4109a5}
+
+
+Creates an array of integers with the info located in the leaves. The array should be sorted if the tree is balanced correctly. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Takes} & a pointer to a node instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns an array of integers with the leaf content 
+\end{DoxyReturn}
+
+
+Definition at line 83 of file Node.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_node_ae0c0332615644c989be5c8137b4109a5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{class_node_ae0c0332615644c989be5c8137b4109a5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_node_a970755e7b9ff4a33fde5433663f06549}{\index{Node@{Node}!recursive\-Num\-Of\-Leaves@{recursive\-Num\-Of\-Leaves}}
+\index{recursive\-Num\-Of\-Leaves@{recursive\-Num\-Of\-Leaves}!Node@{Node}}
+\subsubsection[{recursive\-Num\-Of\-Leaves}]{\setlength{\rightskip}{0pt plus 5cm}int Node\-::recursive\-Num\-Of\-Leaves (
+\begin{DoxyParamCaption}
+\item[{{\bf Node} $\ast$}]{n}
+\end{DoxyParamCaption}
+)}}\label{class_node_a970755e7b9ff4a33fde5433663f06549}
+
+
+Counts the number of leaves recursively. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Takes} & a pointer to a node instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the number of leaves in the tree (int) 
+\end{DoxyReturn}
+
+
+Definition at line 61 of file Node.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_node_a970755e7b9ff4a33fde5433663f06549_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_node_a7c98fb9df43ac39b5e74eda16434908b}{\index{Node@{Node}!recursive\-Num\-Of\-Nodes@{recursive\-Num\-Of\-Nodes}}
+\index{recursive\-Num\-Of\-Nodes@{recursive\-Num\-Of\-Nodes}!Node@{Node}}
+\subsubsection[{recursive\-Num\-Of\-Nodes}]{\setlength{\rightskip}{0pt plus 5cm}int Node\-::recursive\-Num\-Of\-Nodes (
+\begin{DoxyParamCaption}
+\item[{{\bf Node} $\ast$}]{n}
+\end{DoxyParamCaption}
+)}}\label{class_node_a7c98fb9df43ac39b5e74eda16434908b}
+
+
+Counts the number of nodes recursively. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Takes} & a pointer to a node instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the number of nodes in the tree (int) 
+\end{DoxyReturn}
+
+
+Definition at line 35 of file Node.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_node_a7c98fb9df43ac39b5e74eda16434908b_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_node_aebcdeef2d940bb25316fd0eac5d51ed2}{\index{Node@{Node}!\-\_\-data@{\-\_\-data}}
+\index{\-\_\-data@{\-\_\-data}!Node@{Node}}
+\subsubsection[{\-\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$int$>$ Node\-::\-\_\-data}}\label{class_node_aebcdeef2d940bb25316fd0eac5d51ed2}
+
+
+\hyperlink{class_node}{Node} data. 
+
+
+
+Definition at line 72 of file Node.\-h.
+
+\hypertarget{class_node_a49baf1d613dc14f1e1e4aad883dde6fe}{\index{Node@{Node}!children@{children}}
+\index{children@{children}!Node@{Node}}
+\subsubsection[{children}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Node}$\ast$$>$ Node\-::children}}\label{class_node_a49baf1d613dc14f1e1e4aad883dde6fe}
+
+
+Pointers to children. 
+
+
+
+Definition at line 69 of file Node.\-h.
+
+\hypertarget{class_node_ad8184598cdea70e4bbdfd76f2b0f9e85}{\index{Node@{Node}!parent@{parent}}
+\index{parent@{parent}!Node@{Node}}
+\subsubsection[{parent}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node}$\ast$ Node\-::parent}}\label{class_node_ad8184598cdea70e4bbdfd76f2b0f9e85}
+
+
+Pointer to parent. 
+
+
+
+Definition at line 75 of file Node.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/baios/\-Coding/\-C++/\-Git\-Data\-Structures/\-Data\-Structures/234\-Tree/include/\hyperlink{_node_8h}{Node.\-h}\item 
+/home/baios/\-Coding/\-C++/\-Git\-Data\-Structures/\-Data\-Structures/234\-Tree/src/\hyperlink{_node_8cpp}{Node.\-cpp}\end{DoxyCompactItemize}
