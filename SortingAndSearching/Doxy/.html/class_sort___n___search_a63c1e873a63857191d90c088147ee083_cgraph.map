@@ -1,8 +1,0 @@
-<map id="Sort_N_Search::printMenu" name="Sort_N_Search::printMenu">
-<area shape="rect" id="node2" href="$class_sort___n___search.html#ad34f3e05b8ed39ea004e7253b7d7c068" title="Sort_N_Search::mergesort" alt="" coords="254,5,431,32"/>
-<area shape="rect" id="node4" href="$class_sort___n___search.html#a6bfaafde8113af23379d2e2091531c5a" title="Sort_N_Search::quicksort" alt="" coords="257,56,429,83"/>
-<area shape="rect" id="node5" href="$class_sort___n___search.html#a3673aa59d2adfdec3e4b6ea2392b8398" title="Sort_N_Search::bublesort" alt="" coords="257,107,429,133"/>
-<area shape="rect" id="node6" href="$class_sort___n___search.html#ac5b19bdbc68b7a4eeb4b0fd5d3256190" title="Sort_N_Search::binarySearch" alt="" coords="245,157,440,184"/>
-<area shape="rect" id="node7" href="$class_sort___n___search.html#a6597cc2fc0e04fa9ccc0855dc2e07d1c" title="Sort_N_Search::binaryInterpolation\lSearch" alt="" coords="230,209,455,250"/>
-<area shape="rect" id="node3" href="$class_sort___n___search.html#a92480efea81ee755f6353d9a2e96ee03" title="Sort_N_Search::merge" alt="" coords="504,5,659,32"/>
-</map>

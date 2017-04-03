@@ -1,7 +1,0 @@
-<map id="GraphVis::loadTree" name="GraphVis::loadTree">
-<area shape="rect" id="node2" href="$class_graph_vis.html#aaadf4feb214a03fa6f923a30b7fcbf7f" title="Adds a node. " alt="" coords="392,5,528,32"/>
-<area shape="rect" id="node4" href="$class_graph_vis.html#a683b40ddb0fdd31e0c39af23b9826aca" title="Add nodes and edges to connect a parent node to its children. " alt="" coords="190,56,343,83"/>
-<area shape="rect" id="node5" href="$class_node.html#ac393c36db7ebed00ac390e97f9994a12" title="Returns the number of children for this node instance. " alt="" coords="397,107,523,133"/>
-<area shape="rect" id="node3" href="$class_graph_vis.html#adcaebafcfc7696abfa49e894211e7077" title="Converts a string variable to a char* for graphviz compatibility reasons. " alt="" coords="577,5,735,32"/>
-<area shape="rect" id="node6" href="$class_graph_vis.html#aa6403b7de690930c61d2c2ce50268bb1" title="Adds an edge. " alt="" coords="393,56,527,83"/>
-</map>

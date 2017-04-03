@@ -1,6 +1,0 @@
-<map id="Tree::insert" name="Tree::insert">
-<area shape="rect" id="node2" href="$class_tree.html#abb768469ad246c52c8b5ba6ad9c02f70" title="Simply checks if the given value is contained in the tree as a leaf. " alt="" coords="150,5,255,32"/>
-<area shape="rect" id="node4" href="$class_node.html#ac393c36db7ebed00ac390e97f9994a12" title="Returns the number of children for this node instance. " alt="" coords="454,31,581,57"/>
-<area shape="rect" id="node5" href="$class_node.html#a934927d1194b331bf502daea96513eef" title="Pushes a node to the children vector. " alt="" coords="141,107,264,133"/>
-<area shape="rect" id="node3" href="$class_tree.html#a853993d1cc8acbf1ca26a98bc50e3795" title="Tree::empty" alt="" coords="313,5,405,32"/>
-</map>

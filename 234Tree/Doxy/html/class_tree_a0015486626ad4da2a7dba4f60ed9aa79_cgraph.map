@@ -1,7 +1,0 @@
-<map id="Tree::remove" name="Tree::remove">
-<area shape="rect" id="node2" href="$class_tree.html#abb768469ad246c52c8b5ba6ad9c02f70" title="Simply checks if the given value is contained in the tree as a leaf. " alt="" coords="297,30,402,57"/>
-<area shape="rect" id="node4" href="$class_node.html#ac393c36db7ebed00ac390e97f9994a12" title="Returns the number of children for this node instance. " alt="" coords="601,30,727,57"/>
-<area shape="rect" id="node5" href="$class_tree.html#a0b32b0ca65d8ef7df1dc3a1bd0cf6a99" title="Inserts the requested value to the tree as a leaf while keeping it balanced. " alt="" coords="152,81,240,108"/>
-<area shape="rect" id="node3" href="$class_tree.html#a853993d1cc8acbf1ca26a98bc50e3795" title="Tree::empty" alt="" coords="459,30,551,57"/>
-<area shape="rect" id="node6" href="$class_node.html#a934927d1194b331bf502daea96513eef" title="Pushes a node to the children vector. " alt="" coords="288,132,411,158"/>
-</map>
